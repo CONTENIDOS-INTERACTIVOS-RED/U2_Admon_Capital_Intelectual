@@ -185,13 +185,18 @@
     #t_3_3.titulo-segundo(data-aos="flip-up")
       h2 #[span 3.3] Estrategias para la fidelización, motivación y bienestar integral del talento humano
     
-    p.mb-5 Para conocer sobre la temática, lo invitamos a ver el siguiente video.
+    p.mb-4 Para conocer sobre la temática, lo invitamos a ver el siguiente video.
 
-    .bg-full-width.bg-fondo-slider.mb-5
+    .bg-full-width.bg-fondo-slider.mb-0
       .p-4.p-md-5
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/9cqLwqWDCzs?si=F1b2M6SlLRnGqFf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/qtz2_Zypk3s?si=vVLvnalcW8orcKtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
 
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
@@ -256,8 +261,181 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema3',
+  name: 'Tema5',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál de las siguientes acciones es más efectiva para aumentar el sentido de pertenencia en los colaboradores?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Establecer metas de producción mensuales',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Incrementar el número de reuniones técnicas',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Reconocer públicamente los logros individuales y colectivos',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Implementar más tareas administrativas',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué elemento <strong>NO</strong> forma parte del concepto de salario emocional?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Bonificación económica anual',
+                esCorrecta: true,
+              },
+              { id: 'b', texto: 'Flexibilidad de horario', esCorrecta: false },
+              {
+                id: 'c',
+                texto: 'Reconocimiento del esfuerzo',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Posibilidades de desarrollo profesional',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál es el objetivo principal de una estrategia de fidelización del talento humano?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Aumentar el número de empleados en la organización',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Establecer turnos rotativos obligatorios',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Disminuir la cantidad de descansos en la jornada',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Retener a los colaboradores valiosos y comprometidos',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Qué estrategia ayuda directamente a fortalecer el bienestar emocional de los trabajadores?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Aumento en la carga de trabajo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Eliminación de pausas activas',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Implementación de vigilancia estricta',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Programas de manejo del estrés y salud mental',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Cuál de los siguientes indicadores podría utilizarse para evaluar el éxito de una estrategia de bienestar organizacional?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Número de informes contables entregados',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Cantidad de productos defectuosos',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Nivel de satisfacción laboral medido por encuestas',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Total de reuniones realizadas en el mes',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -266,4 +444,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
