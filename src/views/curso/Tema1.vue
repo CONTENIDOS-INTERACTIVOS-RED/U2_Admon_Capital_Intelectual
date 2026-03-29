@@ -239,10 +239,6 @@
               a(href="https://dialnet.unirioja.es/descarga/articulo/10118364.pdf" target="_blank" rel="noopener noreferrer") Dialnet. (2024). Integrando habilidades blandas en la selección de talento [PDF].  
 
  
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://repository.ucc.edu.co/bitstream/20.500.12494/19854/1/2020_estrategias_reclutamiento_seleccion%20.pdf" target="_blank" rel="noopener noreferrer") UCC. (2020). Estrategias de reclutamiento, selección y motivación en el personal [PDF]. Universidad Cooperativa de Colombia.  
-
  
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")

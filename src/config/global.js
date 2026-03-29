@@ -230,11 +230,6 @@ export default {
     },
     {
       referencia:
-        'Universidad Nacional Autónoma de México. (2020). <em>El objetivo del análisis y la descripción de puestos de trabajo</em>.',
-      link: 'https://biblio.juridicas.unam.mx/bjv/libros/14/6792/7.pdf',
-    },
-    {
-      referencia:
         'Instituto Nacional de Administración Pública. (2021). <em>Modelo de gestión de competencias</em>.',
       link:
         'https://inap.gob.do/wp-content/uploads/2021/05/ModeloGestionCompetenciaFinal.pdf',
