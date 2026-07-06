@@ -264,11 +264,11 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.ecotec.edu.ec/content/uploads/investigacion/libros/gestion-talento-humano.pdf" target="_blank" rel="noopener noreferrer") Universidad ECOTEC. (2024). La gestión del talento humano y el desarrollo organizacional [PDF].  
+              a(href="https://magazineasce.com/index.php/1/article/view/87/85" target="_blank" rel="noopener noreferrer") Villalva Morán, M. A., Mata Gómez, M. de los A., & Fernández Solís, M. A. (2025). Gestión estratégica del talento humano y su rol en el desarrollo organizacional: Un estudio de caso en el sector de la salud. ASCE Magazine, 4(2), 733–756.
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://es.wikipedia.org/wiki/Modelo_ADDIE" target="_blank" rel="noopener noreferrer") Modelo ADDIE. (2023). Modelo ADDIE. En Wikipedia, la enciclopedia libre.  
+              a(href="https://es.wikipedia.org/wiki/Modelo_ADDIE" target="_blank" rel="noopener noreferrer") Modelo ADDIE. (2023). Modelo ADDIE. En Wikipedia, la enciclopedia libre.
 
             p.d-flex.my-4
               img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")

@@ -242,11 +242,6 @@
  
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.acelerapyme.es/sites/acelerapyme/files/2024-10/Gesti%C3%B3n%20de%20RRHH%20en%20el%20mundo%20digital.%20Herramientas%20y%20pr%C3%A1cticas%20para%20pymes%20y%20aut%C3%B3nomos.pdf" target="_blank" rel="noopener noreferrer") Digitalización RR HH en pymes y autónomos: herramientas y prácticas. (2024). Acelerapyme.  
-
- 
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
               a(href="https://dspace.umh.es/bitstream/11000/3973/1/TFG%20Romero%20Delgado%20Jorge%20Juan.pdf" target="_blank" rel="noopener noreferrer") Romero Delgado, J. J. (s. f.). Nuevas tendencias en reclutamiento y selección de personal [PDF]. Universidad Miguel Hernández.  
 
 
